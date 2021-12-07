@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 function ToDoList() {
   const [toDo, setToDo] = useState("");
-  const [toDos, setToDos] = useState([]); // 배열
+  const [toDos, setToDos] = useState([]);
   const onChange = (event) => setToDo(event.target.value);
   const onSubmit = (event) => {
     event.preventDefault();
@@ -27,7 +27,9 @@ function ToDoList() {
       <hr />
       <ul>
         {
-          toDos.map((item, index) => <li key={index}>{item}</li>)
+          toDos.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))
         }
       </ul>
     </div>
