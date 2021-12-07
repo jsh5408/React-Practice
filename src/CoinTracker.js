@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function App() {
+function CoinTracker() {
   const [loading, setLoading] = useState(true);
   const [coins, setCoins] = useState([]);
   useEffect(() => {
@@ -30,4 +30,4 @@ function App() {
   );
 }
 
-export default App;
+export default CoinTracker;

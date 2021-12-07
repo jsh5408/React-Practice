@@ -59,7 +59,10 @@ function CoinConverter() {
   }, []);
   const onSelect = (event) => {
     setIndex(event.target.value);
-    if (event.target.value !== "-1"){
+    if (event.target.value === "-1"){
+      setSelected([]);
+    }
+    else {
       setSelected(coins[event.target.value]);
     }
   }
