@@ -1,5 +1,5 @@
 import {BrowserRouter as Router, Route} from "react-router-dom";
-import Header from "./components/Header";
+import Layout from "./components/Layout";
 import Home from "./routes/Home";
 import ToDoList from "./routes/ToDoList";
 import CoinTracker from "./routes/CoinTracker";
@@ -10,8 +10,8 @@ function App() {
   return (
     <div>
       <Router>
-        <Header />
-        <Route exact path="/home" component={Home} />
+        <Layout />
+        <Route exact path="/" component={Home} />
         <Route path="/todolist" component={ToDoList} />
         <Route path="/cointracker" component={CoinTracker} />
         <Route path="/coinconverter" component={CoinConverter} />
