@@ -1,9 +1,10 @@
 import {Link} from "react-router-dom";
+import styles from "./Navigation.module.css";
 
 function Navigation() {
     return (
         <div>
-            <ul>
+            <ul className={styles.ul}>
             <li>
                 <Link to="/todolist">ToDoList</Link>
             </li>
