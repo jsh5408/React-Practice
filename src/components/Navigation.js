@@ -5,16 +5,16 @@ function Navigation() {
     return (
         <div>
             <ul className={styles.ul}>
-            <li>
+            <li className={styles.li}>
                 <Link to="/todolist">ToDoList</Link>
             </li>
-            <li>
+            <li className={styles.li}>
                 <Link to="/cointracker">CoinTracker</Link>
             </li>
-            <li>
+            <li className={styles.li}>
                 <Link to="/coinconverter">CoinConverter</Link>
             </li>
-            <li>
+            <li className={styles.li}>
                 <Link to="/movielist">MovieList</Link>
             </li>
             </ul>
