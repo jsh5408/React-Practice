@@ -5,6 +5,7 @@ import ToDoList from "./routes/ToDoList";
 import CoinTracker from "./routes/CoinTracker";
 import CoinConverter from "./routes/CoinConverter";
 import MovieList from "./routes/MovieList";
+import Toggle from "./routes/Toggle";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/cointracker" component={CoinTracker} />
         <Route path="/coinconverter" component={CoinConverter} />
         <Route path="/movielist" component={MovieList} />
+        <Route path="/toggle" component={Toggle} />
       </Router>
     </div>
   );

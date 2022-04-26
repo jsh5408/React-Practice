@@ -17,6 +17,9 @@ function Navigation() {
             <li className={styles.li}>
                 <Link to="/movielist">MovieList</Link>
             </li>
+            <li className={styles.li}>
+                <Link to="/toggle">Toggle</Link>
+            </li>
             </ul>
         </div>
     )
